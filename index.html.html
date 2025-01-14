@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Fahrularifin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000007;
+            color: #faf7f7;
+        }
+        header {
+            background-image: url(Wallpaper-Laptop.webp);
+            color: #fff;
+            padding: 10%px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #283e51;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            color: #7f7960;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-image: url(Wallpaper-Laptop.webp);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #f5f6f8;
+            font-size: 2em;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #7a7398;
+            margin-top: 5px;
+        }
+        .project {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .project-card {
+            background: #fcf7f7;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33% - 20px);
+            text-align: center;
+        }
+        .project-1 {
+            background: linear-gradient(#040407, #000900, #445a6e);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33% - 20px);
+            text-align: center;
+            transition: 0.7s ease;
+        }
+        .project-1 a:hover {
+            color: white;
+            transform: translateY(-100px);
+            box-shadow: 0 20px 8px rgba(0,0,0,0.7);
+        }
+        .project-2 {
+            background: linear-gradient(#040407, #000900, #445a6e);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33% - 20px);
+            text-align: center;
+            transition: 0.7s ease;
+        }
+        .project-2 a:hover {
+            color: white;
+            transform: translateY(-100px);
+            box-shadow: 0 20px 8px rgba(0,0,0,0.7);
+        }
+        .project-3 {
+            background: linear-gradient(#040407, #000900, #445a6e);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33% - 20px);
+            text-align: center;
+            transition: 0.7s ease;
+            margin-bottom: 200px;
+        }
+        .project-3 a:hover {
+            color: white;
+            transform: translateY(-100px);
+            box-shadow: 0 20px 8px rgba(0,0,0,0.7);
+        }
+        .project-card h3 {
+            color: #4b79a1;
+        }
+        .project-card p {
+            color: #555;
+        }
+        .icons {
+            display: flex;
+            justify-content: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding-left: 2rem;
+        }
+        .icons a {
+            width: 60px;
+            height: 60px;
+            display: block;
+            font-size: 30px;
+            text-align: center;
+            color: #0a0a0a;
+            background-color: rgb(249, 248, 245);
+            line-height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 5px 4px rgba(255, 251, 251, 0.429);
+            transition: 0.5s ease;
+        }
+        .icons a:hover {
+            color: white;
+            transform: translateY(-10px);
+            box-shadow: 0 20px 8px rgba(0,0,0,0.7);
+        }
+        .icons a:nth-child(1):hover {
+            background-color: #ac084c;
+        }
+        .icons a:nth-child(2):hover {
+            background-color: #06fd0a;
+        }
+        .icons a:nth-child(3):hover {
+            background-color: #3b5998;
+        }
+        .icons a:nth-child(4):hover {
+            background-color: #f80101;
+        }
+        .icons a:nth-child(5):hover {
+            background-color: #ef9d0f;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #283e51;
+            color: #f7f7fa;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FAHRUL ARIFIN</h1>
+        <img src="im.jpg" alt="Foto Profil" class="profile-img">
+        <p>Selamat datang! Jelajahi karya dan proyek saya.</p>
+    </header>
+    <nav>
+        <a href="#about">Profil</a>
+        <a href="#projects">Proyek</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>Tentang Saya</h2>
+            <p>Halo! Saya Fahrul Arifin umur saya 22 tahun saya asli Jawa Tengah, lebih tepatnya Cilacap. Saya seorang content creator. Yah,, walau saya baru terjun ke dunia content saya yakin saya akan berkembang di bidang ini. Berikut saya lampirkan beberapa konten video short youtube saya. Jangan lupa like komen dan subscribe chanel saya yah!.</p>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <section id="projects">
+            <h2>Proyek</h2>
+            <div class="project">
+                <div class="project-1">
+                    <h3>Proyek 1</h3>
+                    <a href="https://youtube.com/shorts/p33dpqsEALE?si=qIFfSXklE2cVR-u8">
+                    <p>Keajaiban dunia dan seisinya.</p> 
+                </div></a>
+
+                <div class="project-2">
+                    <h3>Proyek 2</h3>
+                    <a href="https://youtube.com/shorts/5uERg8YQtUY?si=Ss5LPDh6rwvVd38w">
+                    <p>Keajaiban dunia dan keindahanya yang ada di indonesia.</p>
+                </div></a>
+
+                <div class="project-3">
+                    <h3>Proyek 3</h3>
+                    <a href="https://youtube.com/shorts/jBkl8yrJHK4?si=DnZQVhOldtuWZbqn">
+                    <p>Kenyataan yang unik.</p>
+                </div></a>
+            </div>
+
+        </section>
+
+        <section id="contact">
+            <h2>Kontak</h2>
+            <p>Jangan ragu untuk menghubungi saya melalui email atau media sosial di
+                <br> bawah ini:</p>
+            <ul>
+                <div class="icons">
+                <a href="https://www.instagram.com/fahrular_/profilecard/?igsh=Z3EzdG44a3NlMzVw" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/6282133756002/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/fahrul.p.kedua?mibextid=JRoKGi&mibextid=JRoKGi" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://youtube.com/@sen0pati_chanel?si=XfVvxhcT7MTQ_R6D" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="mailto:fahrularifin130803@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+            </ul>
+        </section>
+    </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 FAHRUL ARIFIN. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
